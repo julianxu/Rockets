@@ -443,9 +443,10 @@ class RocketLander(gym.Env):
                 fixtures=fixtureDef(
                     shape=polygonShape(box=(LEG_W / SCALE, LEG_H / SCALE)),
                     density=5.0,
-                    restitution=0.0,
+                    restitution=0.00,
                     categoryBits=0x0020,
                     maskBits=0x005)
+
             )
             leg.ground_contact = False
             leg.color1 = body_color
